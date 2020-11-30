@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(116.82deg, #2B3568 0%, #121837 100%);
+}
+
+#logo{
+    fill: transparent;
+    animation: fill 1s ease forwards 2s;
+    width: calc(556px * 0.5);
+    height: calc(106px * 0.5);
+}
+#logo path:nth-child(2){
+    stroke-dasharray: 542;
+    stroke-dashoffset: 542;
+    animation: logo-anim 1s ease forwards;
+}
+#logo path:nth-child(3){
+    stroke-dasharray: 464;
+    stroke-dashoffset: 464;
+    animation: logo-anim 1s ease forwards 0.2s;
+}
+#logo path:nth-child(4){
+    stroke-dasharray: 528;
+    stroke-dashoffset: 528;
+    animation: logo-anim 1s ease forwards 0.4s;
+}
+#logo path:nth-child(5){
+    stroke-dasharray: 445;
+    stroke-dashoffset: 445;
+    animation: logo-anim 1s ease forwards 0.6s;
+}
+#logo path:nth-child(6){
+    stroke-dasharray: 486;
+    stroke-dashoffset: 486;
+    animation: logo-anim 1s ease forwards 0.8s;
+}
+#logo path:nth-child(7){
+    stroke-dasharray: 516;
+    stroke-dashoffset: 516;
+    animation: logo-anim 1s ease forwards 1s;
+}
+
+@keyframes logo-anim {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fill {
+    from {
+        fill: transparent;
+    }
+    to {
+        fill: white;
+    }
+}
+
+nav{
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 90%;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+    transition: .5s;
+    cursor: pointer;
+}
+nav ul li:hover{
+    background: linear-gradient(90deg, #FFD600 0%, #C10080 100.05%);
+}
+
+#landing{
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#landing svg{
+    margin-bottom: 1rem;
+}
+#landing h3{
+    color: rgb(228, 228, 228);
+    margin-bottom: 1rem
+}
+#landing button{
+    padding: 1rem 3rem;
+    border: none;
+    background: linear-gradient(90deg, #FFD600 0%, #C10080 100.05%);
+    font-size: 1rem;
+    font-weight: 900;
+    transition: 0;
+    cursor: pointer;
+}
+#landing button:hover{
+    background: linear-gradient(90deg, #d6b300 0%, #960064 100.05%);
+    color: rgb(194, 194, 194);
+}
+
+#designer{
+    fill: transparent;
+    width: calc(670px * 0.8);
+    height: calc(106px * 0.8);
+}
+
+#designer defs linearGradient stop:nth-child(1){
+    animation: designer-fill-1 2s ease forwards 3s;
+}
+#designer defs linearGradient stop:nth-child(2){
+    animation: designer-fill-2 2s ease forwards 3s;
+}
+
+#designer path:nth-child(9){
+    stroke-dasharray: 528;
+    stroke-dashoffset: 528;
+    animation: designer-anim 2s ease forwards;
+}
+#designer path:nth-child(10){
+    stroke-dasharray: 496;
+    stroke-dashoffset: 496;
+    animation: designer-anim 2s ease forwards 0.3s;
+}
+#designer path:nth-child(11){
+    stroke-dasharray: 515;
+    stroke-dashoffset: 515;
+    animation: designer-anim 2s ease forwards 0.6s;
+}
+#designer path:nth-child(12){
+    stroke-dasharray: 516;
+    stroke-dashoffset: 516;
+    animation: designer-anim 2s ease forwards 0.9s;
+}
+#designer path:nth-child(13){
+    stroke-dasharray: 253.9;
+    stroke-dashoffset: 253.9;
+    animation: designer-anim 2s ease forwards 1.2s;
+}
+#designer path:nth-child(14){
+    stroke-dasharray: 551;
+    stroke-dashoffset: 551;
+    animation: designer-anim 2s ease forwards 1.5s;
+}
+#designer path:nth-child(15){
+    stroke-dasharray: 577;
+    stroke-dashoffset: 577;
+    animation: designer-anim 2s ease forwards 1.8s;
+}
+#designer path:nth-child(16){
+    stroke-dasharray: 515;
+    stroke-dashoffset: 515;
+    animation: designer-anim 2s ease forwards 2.1s;
+}
+#designer path:nth-child(17){
+    stroke-dasharray: 528;
+    stroke-dashoffset: 528;
+    animation: designer-anim 2s ease forwards 2.3s;
+}
+
+@keyframes designer-anim {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes designer-fill-1{
+    to {
+        stop-color: #FFD600;
+    }
+}
+@keyframes designer-fill-2{
+    to {
+        stop-color: #C10080;
+    }
+}
+
+#wave{
+    z-index: -99999;
+    width: calc(100%);
+    height: calc();
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
