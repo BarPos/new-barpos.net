@@ -6,11 +6,7 @@
     font-family: 'Roboto', sans-serif;
     color: white;
 }
-
-html
-{
-    overflow: hidden;
-}
+html { scroll-behavior: smooth; }
 body{
     width: 100vw;
     height: 100vh;
@@ -71,6 +67,9 @@ body{
 }
 
 nav{
+    top: 0;
+    position: fixed;
+    width: 100vw;
     min-height: 10vh;
     display: flex;
     justify-content: space-around;
@@ -205,8 +204,64 @@ nav ul li:hover{
 #wave{
     z-index: -99999;
     width: calc(100%);
-    height: calc();
     position: absolute;
     bottom: 0;
     left: 0;
+}
+#wave2{
+    z-index: -99999;
+    width: calc(100%);
+    position: absolute;
+    top: 100vh;
+    left: 0;
+}
+
+#portfolio{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#portfolio-svg{
+    width: 95%;
+    max-width: calc(670px * 0.8);
+    max-height: calc(106px * 0.8);
+}
+
+#portfolio div img{
+    width: 45%;
+    margin: 10px;
+}
+
+
+
+
+
+#wave3{
+    z-index: -99999;
+    width: calc(100%);
+    position: absolute;
+    bottom: -100vh;
+    left: 0;
+}
+#wave4{
+    z-index: -99999;
+    width: calc(100%);
+    position: absolute;
+    top: 200vh;
+    left: 0;
+}
+
+#contact{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-svg{
+    width: 95%;
+    max-width: calc(670px * 0.8);
+    max-height: calc(106px * 0.8);
 }
