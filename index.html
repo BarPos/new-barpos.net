@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="style.css?ver=32">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
     <title>BarPos</title>
-    <script src="js.js" defer></script>
+    <script src="navbar.js" defer></script>
+    <link rel="stylesheet" href="navbar.css?ver=32">
 </head>
 <body>
     <nav>
@@ -27,11 +28,16 @@
             <path d="M465.57 54.9219C465.57 64.9062 463.719 73.7422 460.016 81.4297C456.312 89.1172 451.039 95.0469 444.195 99.2188C437.398 103.344 429.641 105.406 420.922 105.406C412.203 105.406 404.469 103.414 397.719 99.4297C390.969 95.3984 385.695 89.6562 381.898 82.2031C378.148 74.75 376.18 66.1953 375.992 56.5391V50.7734C375.992 40.7422 377.82 31.9062 381.477 24.2656C385.18 16.5781 390.453 10.6484 397.297 6.47656C404.188 2.30469 412.016 0.21875 420.781 0.21875C429.453 0.21875 437.188 2.28125 443.984 6.40625C450.781 10.5312 456.055 16.4141 459.805 24.0547C463.602 31.6484 465.523 40.3672 465.57 50.2109V54.9219ZM440.469 50.6328C440.469 40.4609 438.758 32.75 435.336 27.5C431.961 22.2031 427.109 19.5547 420.781 19.5547C408.406 19.5547 401.867 28.8359 401.164 47.3984L401.094 54.9219C401.094 64.9531 402.758 72.6641 406.086 78.0547C409.414 83.4453 414.359 86.1406 420.922 86.1406C427.156 86.1406 431.961 83.4922 435.336 78.1953C438.711 72.8984 440.422 65.2812 440.469 55.3438V50.6328Z" stroke="white" stroke-width="8" mask="url(#path-1-inside-1-logo)"/>
             <path d="M531.102 76.7891C531.102 73.1797 529.812 70.3672 527.234 68.3516C524.703 66.3359 520.227 64.25 513.805 62.0938C507.383 59.9375 502.133 57.8516 498.055 55.8359C484.789 49.3203 478.156 40.3672 478.156 28.9766C478.156 23.3047 479.797 18.3125 483.078 14C486.406 9.64062 491.094 6.26562 497.141 3.875C503.188 1.4375 509.984 0.21875 517.531 0.21875C524.891 0.21875 531.477 1.53125 537.289 4.15625C543.148 6.78125 547.695 10.5312 550.93 15.4062C554.164 20.2344 555.781 25.7656 555.781 32H531.172C531.172 27.8281 529.883 24.5938 527.305 22.2969C524.773 20 521.328 18.8516 516.969 18.8516C512.562 18.8516 509.07 19.8359 506.492 21.8047C503.961 23.7266 502.695 26.1875 502.695 29.1875C502.695 31.8125 504.102 34.2031 506.914 36.3594C509.727 38.4688 514.672 40.6719 521.75 42.9688C528.828 45.2188 534.641 47.6562 539.188 50.2812C550.25 56.6562 555.781 65.4453 555.781 76.6484C555.781 85.6016 552.406 92.6328 545.656 97.7422C538.906 102.852 529.648 105.406 517.883 105.406C509.586 105.406 502.062 103.93 495.312 100.977C488.609 97.9766 483.547 93.8984 480.125 88.7422C476.75 83.5391 475.062 77.5625 475.062 70.8125H499.812C499.812 76.2969 501.219 80.3516 504.031 82.9766C506.891 85.5547 511.508 86.8438 517.883 86.8438C521.961 86.8438 525.172 85.9766 527.516 84.2422C529.906 82.4609 531.102 79.9766 531.102 76.7891Z" stroke="white" stroke-width="8" mask="url(#path-1-inside-1-logo)"/>
         </svg>
-        <ul>
+        <ul class="nav-links">
             <li>Home</li>
             <li>Portfolio</li>
             <li>Contact</li>
         </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
     </nav>
     <section id="landing">
         <div class="text-intro">
@@ -130,7 +136,7 @@
                 </defs>
             </svg>
             <h3>
-                I've been programming since I got my first computer at the age of 9. <br> I started creating websites when I was 12 years old. Now I'm in high school <br> and I'm trying to find a job for myself for the future.
+                I've been programming since I got my first computer at the age of 9. I started creating websites when I was 12 years old. Now I'm in high school and I'm trying to find a job for myself for the future.
             </h3>
             <button>Portfolio</button>
         </div>
